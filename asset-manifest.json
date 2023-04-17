@@ -1,26 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.13ddb44f.css",
-    "main.js": "/static/js/main.ab6c36e5.js",
+    "main.js": "/static/js/main.6db083da.js",
     "static/js/787.3c03f709.chunk.js": "/static/js/787.3c03f709.chunk.js",
     "static/media/safe.mp4": "/static/media/safe.458f81846fa7dfe52aa0.mp4",
     "static/media/chart.mp4": "/static/media/chart.668e72faa778d15bb30c.mp4",
+    "static/media/eth.mp4": "/static/media/eth.c4204b8c6e0dab7d38d4.mp4",
     "static/media/safe.webm": "/static/media/safe.9ff8ab0ad80b461a78e2.webm",
     "static/media/box.webm": "/static/media/box.30fa177db8a32d30ee86.webm",
     "static/media/0.png": "/static/media/0.2e6c635dc34d47495bbc.png",
     "static/media/safe.png": "/static/media/safe.b8d34f1a6ba72b056f7f.png",
     "static/media/chart.png": "/static/media/chart.92306c0787e8d1ecb8f9.png",
     "static/media/chart.webm": "/static/media/chart.4debd9619d08b545b7a8.webm",
+    "static/media/eth.png": "/static/media/eth.514f8d9d56f7e612d1c0.png",
+    "static/media/eth.webm": "/static/media/eth.079f57c92fa59b466012.webm",
     "static/media/tokenomics.png": "/static/media/tokenomics.038b71f9144944284467.png",
     "static/media/background_desktop.png": "/static/media/background_desktop.e655c454a54c8a846f21.png",
     "static/media/background_mobile.png": "/static/media/background_mobile.449d94035c66494d3d67.png",
     "index.html": "/index.html",
     "main.13ddb44f.css.map": "/static/css/main.13ddb44f.css.map",
-    "main.ab6c36e5.js.map": "/static/js/main.ab6c36e5.js.map",
+    "main.6db083da.js.map": "/static/js/main.6db083da.js.map",
     "787.3c03f709.chunk.js.map": "/static/js/787.3c03f709.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.13ddb44f.css",
-    "static/js/main.ab6c36e5.js"
+    "static/js/main.6db083da.js"
   ]
 }
