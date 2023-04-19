@@ -1,0 +1,95 @@
+@import "../../assets/style/app";
+
+.callTo {
+  padding: 90px 8px 60px;
+
+  @include desktop {
+    padding: 160px 0 60px;
+  }
+
+  .blueCard {
+    box-sizing: border-box;
+    height: 370px;
+    border-radius: 20px;
+    background-image: url(../../assets/png/B7_CallTo/background_mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      width: 1180px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 30px;
+      background-image: url(../../assets/png/B7_CallTo/background_desktop.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 80px 0;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 110%;
+      text-align: center;
+      letter-spacing: -0.04em;
+      //background: radial-gradient(39.08% 90.11% at -8.58% 31.25%, rgba(8, 6, 23, 0.72) 0%, rgba(17, 18, 31, 0) 100%), #FFFFFF;
+      background: radial-gradient(105.67% 212.12% at 41.3% -187.12%, rgba(8, 6, 23, 0.72) 0%, rgba(17, 18, 31, 0) 100%), #FFFFFF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @include desktop {
+        font-size: 60px;
+      }
+    }
+
+    .description {
+      margin-top: 24px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      text-align: center;
+      color: #FFF;
+
+      @include desktop {
+        font-size: 15px;
+        width: 380px;
+      }
+    }
+
+    .joinBtn {
+      @include button;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #FFF;
+      border-radius: 999px;
+      transition: 0.3s;
+
+      @include desktop {
+        padding: 13px 20px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: #01090B;
+
+        @include desktop {
+          font-size: 15px;
+        }
+      }
+
+      &:hover {
+        background: #E5E5ED;
+      }
+    }
+  }
+}

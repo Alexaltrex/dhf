@@ -1,0 +1,134 @@
+@import "../../assets/style/app";
+
+.tokenomics {
+  padding: 0 8px;
+
+  @include desktop {
+    padding: 0 10px;
+  }
+
+  .blueCard {
+    position: relative;
+    background-image: url(../../assets/png/B4_Tokenomics/tokenomics.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px 20px;
+
+    @include desktop {
+      border-radius: 30px;
+      padding: 100px 120px;
+    }
+
+    .inner {
+      //padding-left: 20px;
+      //padding-right: 20px;
+
+      @include desktop {
+        padding-left: 0;
+        padding-right: 0;
+        width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .title {
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        @include desktop {
+          font-size: 16px;
+        }
+      }
+
+      .text {
+        margin-top: 24px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.6);
+
+        @include desktop {
+          margin-top: 36px;
+          font-size: 60px;
+        }
+
+        span {
+          color: #FFF;
+        }
+      }
+
+      .bottom {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @include desktop {
+          margin-top: 100px;
+          align-items: flex-end;
+        }
+
+        svg {
+          width: 12.22px;
+          height: 33px;
+
+          @include desktop {
+            width: 15.93px;
+            height: 43px;
+          }
+        }
+
+        .description {
+          position: relative;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          color: #FFF;
+          width: 234px;
+
+          @include desktop {
+            font-size: 20px;
+            width: 580px;
+          }
+
+          &:before {
+            @include onlyDesktop;
+            position: absolute;
+            top: 2px;
+            left: -37px;
+            content: "";
+            height: 21px;
+            width: 1px;
+            background: #FFF;
+            transform: rotate(35deg);
+          }
+        }
+      }
+    }
+
+    .cornerRadius {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      width: 80px;
+      height: 80px;
+      border-radius: 0 0 16px 0;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: none;
+      border-left: none;
+
+      @include desktop {
+        bottom: 20px;
+        right: 20px;
+        width: 120px;
+        height: 120px;
+        border-radius: 0 0 24px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../assets/style/app";
+
+.links {
+
+  .label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #89898F;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    @include desktop {
+      margin-top: 24px;
+    }
+
+    .link {
+      position: relative;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      color: #D1D1DB;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+
+        @include desktop {
+          margin-top: 20px;
+        }
+      }
+
+      &:after {
+        @include desktop {
+          display: block;
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          height: 1px;
+          width: 0;
+          background: #D1D1DB;
+          transition: 0.3s;
+        }
+      }
+
+      &:hover {
+        &:after {
+          @include desktop {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

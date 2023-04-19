@@ -1,0 +1,64 @@
+@import "../../assets/style/app";
+
+.footer {
+  padding-bottom: 28px;
+
+  .inner {
+    @include inner;
+
+    .footerMobile {
+      @include onlyMobile;
+
+      .middle {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .right {
+
+        }
+      }
+
+    }
+
+    .footerDesktop {
+      @include onlyDesktop;
+
+      .top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .right {
+          display: flex;
+
+          .linksWrapper {
+            width: 220px;
+          }
+
+          .right {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+          }
+
+        }
+      }
+
+
+
+
+    }
+
+    .rights {
+      margin-top: 50px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #D1D1DB;
+
+      @include desktop {
+        margin-top: 30px;
+      }
+    }
+  }
+}

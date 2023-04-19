@@ -1,0 +1,49 @@
+@import "../../assets/style/app";
+
+.teamSlider {
+  padding-top: 124px;
+
+  @include desktop {
+    padding-top: 110px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.04em;
+    background: radial-gradient(39.08% 90.11% at -8.58% 31.25%, rgba(8, 6, 23, 0.72) 0%, rgba(17, 18, 31, 0) 100%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include desktop {
+      font-size: 60px;
+    }
+  }
+
+  .swiperMobile {
+    @include onlyMobile;
+    margin-top: 30px;
+
+    .swiperSlide {
+      width: 275px;
+    }
+  }
+
+  .cardsDesktop {
+    @include onlyDesktop;
+
+    margin-top: 50px;
+
+    .inner {
+      @include inner;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 22px 20px;
+    }
+
+  }
+
+}

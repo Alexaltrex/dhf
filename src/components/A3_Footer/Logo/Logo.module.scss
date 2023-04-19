@@ -1,0 +1,26 @@
+@import "../../../assets/style/app";
+
+.logo {
+
+  .label {
+    @include Outfit;
+    font-weight: 500;
+    font-size: 29.913px;
+    line-height: 120%;
+    color: #FFF;
+
+    @include desktop {
+      font-size: 32px;
+    }
+  }
+
+  .text {
+    @include onlyDesktop;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #89898F;
+    width: 280px;
+  }
+}

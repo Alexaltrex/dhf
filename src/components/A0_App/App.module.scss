@@ -1,0 +1,14 @@
+@import "../../assets/style/app";
+
+.app {
+  background: #070913;
+
+  .blueBoxWrapper {
+    position: relative;
+    padding: 8px 8px 0;
+
+    @include desktop {
+      padding: 10px 10px 0;
+    }
+  }
+}

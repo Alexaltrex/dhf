@@ -1,0 +1,214 @@
+@import "../../../assets/style/app";
+
+.slide {
+  position: relative;
+  cursor: pointer;
+  padding: 24px;
+  border-radius: 20px;
+  transition: 0.3s;
+  background: linear-gradient(rgba(213, 210, 230, 0.08), rgba(213, 210, 230, 0), rgba(213, 210, 230, 0), rgba(213, 210, 230, 0.08));
+
+  @include desktop {
+    padding: 30px;
+    display: flex;
+  }
+
+  &:after {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    content: "";
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    //background: linear-gradient(180deg, #0C0E18 0%, #080A14 104.6%);
+    background: #080A14;
+    border-radius: 19px;
+    transition: 0.3s;
+  }
+
+  @include desktop {
+
+    &:hover {
+      background: linear-gradient(rgba(213, 210, 230, 0.15), rgba(213, 210, 230, 0.03), rgba(213, 210, 230, 0.04), rgba(213, 210, 230, 0.1));
+
+      &:after {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        content: "";
+        top: 1px;
+        bottom: 1px;
+        left: 1px;
+        right: 1px;
+        //background: linear-gradient(180deg, #13151F 0%, #0D0F19 104.6%);
+        background: #0F1118;
+        border-radius: 19px;
+      }
+    }
+  }
+
+  &_active {
+    background: linear-gradient(rgba(213, 210, 230, 0.15), rgba(213, 210, 230, 0.03), rgba(213, 210, 230, 0.04), rgba(213, 210, 230, 0.1));
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      content: "";
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+      //background: linear-gradient(180deg, #13151F 0%, #0D0F19 104.6%);
+      background: #0F1118;
+      border-radius: 19px;
+    }
+
+  }
+
+  .top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 16px;
+
+      @include desktop {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .socials {
+      @include onlyMobile(flex);
+
+      .link {
+        width: 24px;
+        height: 24px;
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            fill: #D1D1DB;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+
+    @include desktop {
+      margin-top: 0;
+      margin-left: 30px;
+    }
+
+    .name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 100%;
+      color: #FFF;
+
+      @include desktop {
+        font-size: 24px;
+      }
+    }
+
+    .job {
+      position: relative;
+      align-self: flex-start;
+      margin-top: 20px;
+      padding: 8px 10px 0;
+      background: linear-gradient(90.19deg, rgba(108, 78, 255, 1), rgba(255, 255, 255, 1));
+      border-radius: 36px;
+
+      &:after {
+        display: block;
+        content: "";
+        z-index: 1;
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        left: 1px;
+        right: 1px;
+        border-radius: 35px;
+        background: rgb(20,20,38);
+      }
+
+      p {
+        position: relative;
+        z-index: 2;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        background: linear-gradient(90deg, #6C4EFF, #FFFFFF), #FFFFFF;;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 9px;
+      }
+
+    }
+
+    .description {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #D1D1DB;
+
+      @include desktop {
+        margin-top: 18px;
+        font-size: 15px;
+      }
+    }
+
+    .socials {
+      @include onlyDesktop(flex);
+      margin-top: 20px;
+
+      .link {
+        width: 24px;
+        height: 24px;
+
+        &:not(:first-child) {
+          margin-left: 6px;
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            transition: 0.3s;
+            fill: #D9D9D9;
+          }
+        }
+
+        &:hover {
+          svg path {
+            fill: #FFF;
+          }
+        }
+      }
+    }
+
+  }
+}

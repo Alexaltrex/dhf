@@ -1,0 +1,43 @@
+@import "../../../assets/style/app";
+
+.backToTop {
+  margin-top: 47px;
+
+  @include desktop {
+    margin-top: 0;
+  }
+
+  .label {
+    @include onlyMobile;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #89898F;
+  }
+
+  .btn {
+    display: block;
+    @include centerRow;
+    margin-top: 13px;
+    width: 40px;
+    height: 40px;
+    //background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 104.6%);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(213, 210, 230, 0.08);
+    transition: 0.3s;
+
+    @include desktop {
+      margin-top: 0;
+      width: 46px;
+      height: 46px;
+    }
+
+    &:hover {
+      @include desktop {
+        background: #1B1D26;
+      }
+    }
+
+  }
+}
