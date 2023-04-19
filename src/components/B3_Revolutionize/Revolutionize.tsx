@@ -19,11 +19,9 @@ export const Revolutionize = ({ scopeRef }: any) => {
     canvasRef.current.width = 1920;
     canvasRef.current.height = 1080;
 
-    let frameCount = 108;
+    let frameCount = 257;
     const currentFrame = (index: any) =>
-      `./assets/sequence/ezgif-frame-${(index + 1)
-        .toString()
-        .padStart(3, '0')}.png`;
+      `./assets/sequence/${(index + 1).toString().padStart(5, '0')}.png`;
 
     let images: any = [];
     let airpods = {
