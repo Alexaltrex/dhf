@@ -18,7 +18,7 @@ import { RevolutionizeMobile } from '../B3_Revolutionize/RevolutionizeMobile';
 
 export const App = observer(() => {
   const { setScrollDown, pageYOffset, setPageYOffset } = useStore();
-  const isDesctop = useMediaQuery('(min-width: 1440px)');
+  const isDesktop = useMediaQuery('(min-width: 1440px)');
 
   useEffect(() => {
     const onScroll = (e: Event) => {
@@ -44,7 +44,7 @@ export const App = observer(() => {
 
         <Invest />
         <WeWorkWith />
-        {isDesctop ? <Revolutionize /> : <RevolutionizeMobile />}
+        {isDesktop ? <Revolutionize /> : <RevolutionizeMobile />}
         <Tokenomics />
         <Distribution />
         <TeamSlider />

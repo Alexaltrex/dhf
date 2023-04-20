@@ -37,10 +37,15 @@
       }
 
       .animWrapper {
-        width: 326px;
-        height: 324.8px;
+        width: 264px;
+        height: 264px;
         margin-left: auto;
         margin-right: auto;
+
+        @include mobile360 {
+          width: 326px;
+          height: 324.8px;
+        }
 
         @include desktop {
           width: 544px;

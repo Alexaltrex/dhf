@@ -19,10 +19,16 @@
     }
 
     .videoWrapper {
-      width: 312px;
-      height: 466px;
+      // 1.4936
+      width: 264px;
+      height: 394px;
       margin-left: auto;
       margin-right: auto;
+
+      @include mobile360 {
+        width: 312px;
+        height: 466px;
+      }
 
       @include desktop {
         width: 498px;

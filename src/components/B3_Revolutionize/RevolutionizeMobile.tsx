@@ -1,12 +1,14 @@
 import * as React from 'react';
 import style from './Revolutionize.module.scss';
 import {cards} from './cards';
-// @ts-ignore
-import videoUrl from '../../assets/webm/box.webm';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import src from "../../assets/png/box.png";
 import {isSafari} from "../../helpers/helpers";
+// @ts-ignore
+import videoWebm from "../../assets/webm/box.webm";
+// @ts-ignore
+import videoMp4 from "../../assets/mp4/box.mp4";
 
 const title = 'Revolutionize Your Investing Experience with DHF';
 
@@ -26,11 +28,14 @@ export const RevolutionizeMobile = ({scopeRef}: any) => {
                             ) : (
                                 <video
                                     preload='auto'
-                                    src={videoUrl}
                                     autoPlay
                                     muted={true}
                                     playsInline={true}
-                                />
+                                    loop={true}
+                                >
+                                    <source src={videoWebm}/>
+                                    <source src={videoMp4}/>
+                                </video>
                             )
                         }
                     </div>

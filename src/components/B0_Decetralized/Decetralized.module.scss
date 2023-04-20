@@ -100,7 +100,11 @@
           background: #FFFFFF;
           box-shadow: 0 14.9307px 14.9307px rgba(23, 0, 86, 0.12);
           border-radius: 10px;
-          padding: 12px;
+          padding: 8px;
+
+          @include mobile360 {
+            padding: 12px;
+          }
 
           @include desktop {
             box-shadow: 0px 30px 30px rgba(23, 0, 86, 0.12);
@@ -159,8 +163,13 @@
 
           &_1 {
             top: 67px;
-            left: -75px;
-            width: 136px;
+            left: -67px;
+            width: 128px;
+
+            @include mobile360 {
+              left: -75px;
+              width: 136px;
+            }
 
             @include desktop {
               top: 130px;
@@ -181,8 +190,13 @@
 
           &_2 {
             top: 112px;
-            right: -76px;
-            width: 118px;
+            right: -68px;
+            width: 110px;
+
+            @include mobile360 {
+              right: -76px;
+              width: 118px;
+            }
 
             @include desktop {
               top: 226px;

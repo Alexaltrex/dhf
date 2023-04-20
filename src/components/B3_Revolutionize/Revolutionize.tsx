@@ -21,7 +21,7 @@ export const Revolutionize = ({ scopeRef }: any) => {
 
     let frameCount = 257;
     const currentFrame = (index: any) =>
-      `./assets/sequence/${(index + 1).toString().padStart(5, '0')}.png`;
+      `./assets/sequence/${(index + 1).toString().padStart(5, '0')}.jpg`;
 
     let images: any = [];
     let airpods = {
