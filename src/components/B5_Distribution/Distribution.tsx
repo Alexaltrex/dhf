@@ -3,7 +3,7 @@ import style from "./Distribution.module.scss"
 import {list} from "./list";
 import {useAnimateNumber} from "../../hooks/useAnimateNumber";
 // @ts-ignore
-import videoWebm from "../../assets/webm/chart.webm";
+//import videoWebm from "../../assets/webm/chart.webm";
 // @ts-ignore
 import videoMp4 from "../../assets/mp4/chart.mp4";
 import {isSafari} from "../../helpers/helpers";
@@ -34,7 +34,7 @@ export const Distribution = () => {
                                        playsInline={true}
                                        loop={true}
                                 >
-                                    <source src={videoWebm}/>
+                                    {/*<source src={videoWebm}/>*/}
                                     <source src={videoMp4}/>
                                 </video>
                             )

@@ -6,7 +6,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import src from "../../assets/png/box.png";
 import {isSafari} from "../../helpers/helpers";
 // @ts-ignore
-import videoWebm from "../../assets/webm/box.webm";
+//import videoWebm from "../../assets/webm/box.webm";
 // @ts-ignore
 import videoMp4 from "../../assets/mp4/box.mp4";
 
@@ -33,7 +33,7 @@ export const RevolutionizeMobile = ({scopeRef}: any) => {
                                     playsInline={true}
                                     loop={true}
                                 >
-                                    <source src={videoWebm}/>
+                                    {/*<source src={videoWebm}/>*/}
                                     <source src={videoMp4}/>
                                 </video>
                             )

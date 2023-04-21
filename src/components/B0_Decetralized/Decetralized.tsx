@@ -5,7 +5,7 @@ import {svgIcons} from "../../assets/svgIcons";
 import {socialLinks} from "./socialLinks";
 import {useAnimateNumber} from "../../hooks/useAnimateNumber";
 // @ts-ignore
-import videoWebm from "../../assets/webm/eth.webm";
+//import videoWebm from "../../assets/webm/eth.webm";
 // @ts-ignore
 import videoMp4 from "../../assets/mp4/eth.mp4";
 import {isSafari} from "../../helpers/helpers";
@@ -41,7 +41,7 @@ export const Decetralized = () => {
                                            playsInline={true}
                                            loop={true}
                                     >
-                                        <source src={videoWebm}/>
+                                        {/*<source src={videoWebm}/>*/}
                                         <source src={videoMp4}/>
                                     </video>
                                 )
