@@ -2,7 +2,7 @@ import * as React from "react";
 import style from "./Invest.module.scss";
 import {useAnimateNumber} from "../../hooks/useAnimateNumber";
 // @ts-ignore
-//import videoWebm from "../../assets/webm/safe.webm";
+import videoWebm from "../../assets/webm/safe.webm";
 // @ts-ignore
 import videoMp4 from "../../assets/mp4/safe.mp4";
 import {isSafari} from "../../helpers/helpers";
@@ -30,8 +30,9 @@ export const Invest = () => {
                                    playsInline={true}
                                    loop={true}
                             >
-                                {/*<source src={videoWebm}/>*/}
-                                <source src={videoMp4}/>
+                                <source src={videoMp4} type='video/mp4; codecs="hvc1"'/>
+                                <source src={videoWebm} type='video/webm'/>
+
                             </video>
                         )
                     }

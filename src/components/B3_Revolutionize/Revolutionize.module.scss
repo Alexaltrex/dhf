@@ -7,6 +7,7 @@
   @include desktop {
     padding-top: 210px;
     padding-bottom: 0;
+    background: linear-gradient(180deg, #060712 0%, #070713 16.99%, #070713 79.13%, #060712 100%);
   }
 
   .inner {
@@ -45,6 +46,7 @@
       }
 
       .animationWrapper {
+        //box-shadow: 0 0 34px 40px rgb(7,7,19);
         pointer-events: none;
         // 1.1349
         width: 264px;
