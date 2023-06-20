@@ -89,7 +89,7 @@ const Calculator = () => {
     handlePercent();
     handleInvested();
     calculateEarn();
-  });
+  }, [period, stakingValues, lockupValues, percentage]);
 
   return (
     <div className={style.calculator}>
