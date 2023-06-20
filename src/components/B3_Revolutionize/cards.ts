@@ -1,26 +1,32 @@
 export const cards = [
-    {
-        title: "Maximize Your Profits",
-        description: "DHF offers diverse investment opportunities for stable income and growth, with expert analysis to identify the most promising opportunities.",
-    },
-    {
-        title: "Expertly Curated Treasury",
-        description: "Our analysts do the research and select the best investment opportunities to maximize returns for you.",
-    },
-    {
-        title: "Buy, Contribute and Earn",
-        description: "Invest in DHF and join our investment strategies to earn returns on your contribution.",
-    },
-    {
-        title: "Hassle-Free",
-        description: "Leave the hard work to us. Our analysts manage your investments so you can watch your profits grow with ease.",
-    },
-    {
-        title: "Full Transparency",
-        description: "DHF provides full transparency for all transactions and investments, so you can trust that your investments are managed responsibly.",
-    },
-    {
-        title: "Risk Management",
-        description: "DHF minimizes risk and protects your capital through diversification, hedging, and careful analysis of market trends.",
-    },
+  {
+    title: 'High Yields',
+    description:
+      'Earn up to 150% APY, enticing potential investors with the prospect of substantial returns.',
+  },
+  {
+    title: 'Expertise',
+    description:
+      'Leverage the skills of our professional traders and analysts to generate profits and ensure a stable yield.',
+  },
+  {
+    title: 'Flexibility',
+    description:
+      'Tailor your investment experience with our innovative Investment Pools, catering to diverse risk appetites.',
+  },
+  {
+    title: 'Passive Income',
+    description:
+      'Secure a steady stream of monthly USDT dividends, powered by 30% of treasury profits generated from trading and investment activities.',
+  },
+  {
+    title: 'Stability',
+    description:
+      'Experience a more stable ecosystem through yield vesting when unstaking previously staked DHF or DHF liquidity.',
+  },
+  {
+    title: 'Transparency',
+    description:
+      'Engage in an open, community-driven project, with opportunities for involvement and staying informed about progress.',
+  },
 ];

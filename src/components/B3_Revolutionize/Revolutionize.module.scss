@@ -7,7 +7,13 @@
   @include desktop {
     padding-top: 210px;
     padding-bottom: 0;
-    background: linear-gradient(180deg, #060712 0%, #070713 16.99%, #070713 79.13%, #060712 100%);
+    background: linear-gradient(
+      180deg,
+      #060712 0%,
+      #070713 16.99%,
+      #070713 79.13%,
+      #060712 100%
+    );
   }
 
   .inner {
@@ -19,13 +25,15 @@
       line-height: 110%;
       letter-spacing: -0.04em;
       background: radial-gradient(
-          39.08% 90.11% at -8.58% 31.25%,
+          52.4% 104.55% at 53.32% 134.09%,
           rgba(8, 6, 23, 0.72) 0%,
           rgba(17, 18, 31, 0) 100%
         ),
         #ffffff;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
 
       @include desktop {
         font-size: 60px;
@@ -37,6 +45,8 @@
     }
 
     .content {
+      position: relative;
+
       @include desktop {
         padding-top: 80px;
         display: flex;
@@ -64,6 +74,9 @@
           margin-left: 44px;
           width: 612px;
           height: 700px;
+
+          margin-left: auto;
+          margin-right: 0;
         }
 
         video {
@@ -92,6 +105,8 @@
         margin-top: 40px;
 
         @include desktop {
+          position: absolute;
+          left: 0;
           margin-top: 0;
           width: 580px;
         }

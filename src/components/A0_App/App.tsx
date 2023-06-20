@@ -1,59 +1,63 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import style from './App.module.scss';
-import {Decetralized} from '../B0_Decetralized/Decetralized';
-import {Header} from '../A1_Header/Header';
-import {BurgerMenu} from '../A2_BurgerMenu/BurgerMenu';
-import {Invest} from '../B1_Invest/Invest';
-import {WeWorkWith} from '../B2_WeWorkWith/WeWorkWith';
-import {Revolutionize} from '../B3_Revolutionize/Revolutionize';
-import {Tokenomics} from '../B4_Tokenomics/Tokenomics';
-import {Distribution} from '../B5_Distribution/Distribution';
-import {TeamSlider} from '../B6_Team/TeamSlider';
-import {CallTo} from '../B7_CallTo/CallTo';
-import {Footer} from '../A3_Footer/Footer';
-import {observer} from 'mobx-react-lite';
-import {useStore} from '../../store/useStore';
-import {useMediaQuery} from 'usehooks-ts';
-import {RevolutionizeMobile} from '../B3_Revolutionize/RevolutionizeMobile';
+import { Decetralized } from '../B0_Decetralized/Decetralized';
+import { Header } from '../A1_Header/Header';
+import { BurgerMenu } from '../A2_BurgerMenu/BurgerMenu';
+import { Invest } from '../B1_Invest/Invest';
+import { WeWorkWith } from '../B2_WeWorkWith/WeWorkWith';
+import { Revolutionize } from '../B3_Revolutionize/Revolutionize';
+import { Tokenomics } from '../B4_Tokenomics/Tokenomics';
+import { Distribution } from '../B5_Distribution/Distribution';
+import { TeamSlider } from '../B6_Team/TeamSlider';
+import { CallTo } from '../B7_CallTo/CallTo';
+import { Footer } from '../A3_Footer/Footer';
+import { observer } from 'mobx-react-lite';
+import { useStore } from '../../store/useStore';
+import { useMediaQuery } from 'usehooks-ts';
+import { RevolutionizeMobile } from '../B3_Revolutionize/RevolutionizeMobile';
+import Main from '../B1_Main/Main';
+import Staking from '../B2_Staking/Staking';
 
 export const App = observer(() => {
-    const {setScrollDown, pageYOffset, setPageYOffset} = useStore();
-    const isDesktop = useMediaQuery('(min-width: 1440px)');
+  const { setScrollDown, pageYOffset, setPageYOffset } = useStore();
+  const isDesktop = useMediaQuery('(min-width: 1440px)');
 
-    useEffect(() => {
-        const onScroll = (e: Event) => {
-            if (window.pageYOffset > pageYOffset) {
-                setScrollDown(true);
-            } else {
-                setScrollDown(false);
-            }
-            setPageYOffset(window.pageYOffset);
-        };
-        window.addEventListener('scroll', onScroll, {passive: true});
-    }, [pageYOffset]);
+  useEffect(() => {
+    const onScroll = (e: Event) => {
+      if (window.pageYOffset > pageYOffset) {
+        setScrollDown(true);
+      } else {
+        setScrollDown(false);
+      }
+      setPageYOffset(window.pageYOffset);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }, [pageYOffset]);
 
-    // https://player.vimeo.com/video/820161809?h=6b63ef98af&autoplay=1&loop=1&title=0&byline=0&portrait=0
+  // https://player.vimeo.com/video/820161809?h=6b63ef98af&autoplay=1&loop=1&title=0&byline=0&portrait=0
 
-    return (
-        <div className={`${style.app}`} id='Home'>
-            <div className='scroller'>
-                <BurgerMenu/>
+  return (
+    <div className={`${style.app}`} id='Home'>
+      <div className='scroller'>
+        <BurgerMenu />
 
-                <div className={style.blueBoxWrapper}>
-                    <Header/>
-                    <Decetralized/>
-                </div>
-
-                <Invest/>
-                <WeWorkWith/>
-                {isDesktop ? <Revolutionize /> : <RevolutionizeMobile />}
-                <Tokenomics/>
-                <Distribution/>
-                <TeamSlider/>
-                <CallTo/>
-
-                <Footer/>
-            </div>
+        <div className={style.blueBoxWrapper}>
+          <Header />
+          {/* <Decetralized /> */}
+          <Main />
         </div>
-    );
+
+        <Invest />
+        <Staking />
+        {isDesktop ? <Revolutionize /> : <RevolutionizeMobile />}
+        {/* <Tokenomics /> */}
+        <WeWorkWith />
+        <Distribution />
+        <TeamSlider />
+        <CallTo />
+
+        <Footer />
+      </div>
+    </div>
+  );
 });

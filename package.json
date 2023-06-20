@@ -1,5 +1,4 @@
 {
-  "homepage": "http://alexaltrex.github.io/dhf",
   "name": "dhf",
   "version": "0.1.0",
   "private": true,
@@ -20,6 +19,7 @@
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-mouse": "^2.0.1",
     "react-player": "^2.12.0",
     "react-router-dom": "^6.10.0",
     "react-router-hash-link": "^2.4.3",

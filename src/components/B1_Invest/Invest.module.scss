@@ -1,4 +1,4 @@
-@import "../../assets/style/app";
+@import '../../assets/style/app';
 
 .invest {
   padding-top: 50px;
@@ -64,85 +64,82 @@
         font-size: 40px;
         line-height: 110%;
         letter-spacing: -0.04em;
-        background: radial-gradient(99.5% 74.32% at 0% -35%, rgba(8, 6, 23, 0.72) 0%, rgba(17, 18, 31, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+        background: radial-gradient(
+            39.08% 90.11% at -8.58% 31.25%,
+            rgba(8, 6, 23, 0.72) 0%,
+            rgba(17, 18, 31, 0) 100%
+          )
+          #ffffff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
 
+        br {
+          display: none;
+        }
+
         @include desktop {
-          font-size: 60px;
+          font-size: 44px;
+
+          background: radial-gradient(
+              38.53% 90.9% at 65.15% -19.92%,
+              rgba(8, 6, 23, 0.72) 0%,
+              rgba(17, 18, 31, 0) 100%
+            )
+            #ffffff;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+
+          br {
+            display: block;
+          }
         }
       }
 
-      .blocks {
-        margin-top: 40px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap: 40px;
+      .text {
+        margin: 40px 0 0;
 
-        @include desktop {
-          margin-top: 68px;
-          grid-template-rows: repeat(1, 1fr);
-          grid-template-columns: repeat(2, 1fr);
-          grid-column-gap: 12px;
+        @media (max-width: 991px) {
+          margin: 30px 0 0;
         }
 
-        .block {
-          position: relative;
-          box-sizing: border-box;
-          border: 1px solid rgba(255,255,255,0.37);
-          border-bottom: none;
-          border-radius: 28px 28px 0 0;
-          padding: 30px 20px 0;
+        p {
+          font-family: 'Manrope';
+          font-size: 17px;
+          line-height: 150%;
+          color: #d1d1db;
 
-          @include desktop {
-            padding: 36px 30px 0;
-          }
-
-          .gradient {
-            position: absolute;
-            top: -1px;
-            left: -1px;
-            right: -1px;
-            bottom: 0;
-            background: linear-gradient(rgba(7,9,19,0.5), rgba(7,9,19,1));
-          }
-
-          .value {
-            position: relative;
-            z-index: 1;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 100%;
-            letter-spacing: -0.04em;
-            color: #FFF;
-
-            @include desktop {
-              font-size: 46px;
-            }
-          }
-
-          .text {
-            position: relative;
-            z-index: 1;
-            margin-top: 16px;
-            font-weight: 400;
+          @media (max-width: 991px) {
             font-size: 14px;
             line-height: 150%;
-            color: #D1D1DB;
-
-            @include desktop {
-              margin-top: 19px;
-              font-size: 15px;
-            }
           }
 
+          &:not(:first-child) {
+            margin: 14px 0 0;
+
+            @media (max-width: 991px) {
+              margin: 10px 0 0;
+            }
+          }
         }
       }
 
+      .btn {
+        margin: 40px 0 0;
+
+        @media (max-width: 991px) {
+          margin: 30px 0 0;
+        }
+
+        & > div {
+          & > div {
+            padding: 0 30px;
+          }
+        }
+      }
     }
-
-
   }
 }

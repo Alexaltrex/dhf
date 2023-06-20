@@ -1,0 +1,122 @@
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.main {
+  padding: 142px 50px 40px;
+  position: relative;
+  margin: 10px 10px 0;
+  background: radial-gradient(
+      96.18% 26.49% at 52.13% 101.88%,
+      rgba(218, 180, 255, 0.8) 0%,
+      rgba(139, 85, 255, 0.8) 22.93%,
+      rgba(51, 24, 182, 0.8) 47.91%,
+      rgba(12, 12, 21, 0) 95.34%
+    ),
+    #0a0b16;
+  border-radius: 39px;
+
+  @media (max-width: 767px) {
+    margin: 8px 8px 0;
+    padding: 142px 20px 58px;
+    background: radial-gradient(
+        117.47% 15.37% at 52.13% 101.88%,
+        rgba(218, 180, 255, 0.8) 0%,
+        rgba(139, 85, 255, 0.8) 22.93%,
+        rgba(51, 24, 182, 0.8) 47.91%,
+        rgba(12, 12, 21, 0) 100%
+      ),
+      #0a0b16;
+    border-radius: 20px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    border-radius: 39px;
+  }
+
+  &Bg {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    top: 0;
+    left: -8px;
+    right: -8px;
+    bottom: 0;
+
+    &__item {
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 285px;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 95px;
+        right: 0;
+      }
+    }
+  }
+
+  &Tokens {
+    position: absolute !important;
+    overflow: visible !important;
+    pointer-events: none;
+    user-select: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    &__item {
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 40%;
+        left: -50px;
+      }
+      &:nth-child(2) {
+        top: 20%;
+        left: 100px;
+      }
+      &:nth-child(3) {
+        right: 60px;
+        bottom: 35%;
+      }
+      &:nth-child(4) {
+        right: -50px;
+        bottom: 5%;
+      }
+    }
+  }
+
+  &Body {
+    /* @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+  }
+}

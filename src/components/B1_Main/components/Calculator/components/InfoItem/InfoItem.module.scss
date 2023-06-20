@@ -1,0 +1,27 @@
+.info {
+  .label {
+    font-family: 'Manrope';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    align-items: center;
+    letter-spacing: -0.04em;
+    color: #878789;
+  }
+
+  .value {
+    margin: 6px 0 0;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+
+    @media (max-width: 767px) {
+      margin: 5px 0 0;
+      font-size: 15px;
+      line-height: 110%;
+    }
+  }
+}

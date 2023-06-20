@@ -19,9 +19,9 @@ export const Revolutionize = ({ scopeRef }: any) => {
     canvasRef.current.width = 1920;
     canvasRef.current.height = 1080;
 
-    let frameCount = 238;
+    let frameCount = 256;
     const currentFrame = (index: any) =>
-      `./assets/sequence/${(index + 1).toString().padStart(4, '0')}.jpg`;
+      `./assets/sequence/BOX_${(index + 1).toString().padStart(5, '0')}.jpg`;
 
     let images: any = [];
     let airpods = {
@@ -56,7 +56,7 @@ export const Revolutionize = ({ scopeRef }: any) => {
             scrub: 0.5,
             markers: false,
             start: 'top - 100',
-            end: '+=300%',
+            end: '+=330%',
 
             onUpdate: (self) => {
               if (self.progress > 0.1666 && self.progress < 0.3332) {

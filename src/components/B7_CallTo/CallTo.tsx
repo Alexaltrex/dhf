@@ -1,24 +1,28 @@
-import * as React from "react";
-import style from "./CallTo.module.scss";
+import * as React from 'react';
+import style from './CallTo.module.scss';
+import Button from '../Button/Button';
 
 export const CallTo = () => {
-    return (
-        <div className={style.callTo}>
-            <div className={style.blueCard}>
+  return (
+    <div className={style.callTo}>
+      <div className={style.blueCard}>
+        <h2 className={style.title}>Step into the future with DHF</h2>
 
-                 <h2 className={style.title}>
-                     Call To Action section
-                 </h2>
+        <p className={style.description}>
+          Join us on a journey to reshape the conventional hedge fund industry,
+          dismantling barriers and democratizing the world of finance to empower
+          the everyday individual like never before.
+        </p>
 
-                <p className={style.description}>
-                    It can be a text calling for action, It can be a text calling for action, It can be a text calling for action
-                </p>
-
-                <button className={style.joinBtn}>
-                    <p>Join DHF Community</p>
-                </button>
-
-            </div>
-        </div>
-    )
-}
+        <Button
+          className={style.joinBtn}
+          withArrow
+          title='Join DHF Community'
+        />
+        {/* <button className={style.joinBtn}>
+          <p>Join DHF Community</p>
+        </button> */}
+      </div>
+    </div>
+  );
+};
