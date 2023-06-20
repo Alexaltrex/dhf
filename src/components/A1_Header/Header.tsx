@@ -8,6 +8,7 @@ import { svgIcons } from '../../assets/svgIcons';
 import { links } from './links';
 import { HashLink } from 'react-router-hash-link';
 import clsx from 'clsx';
+import Button from '../Button/Button';
 
 export const Header = observer(() => {
   const { burgerMenu, setBurgerMenu, pageYOffset, scrollDown } = useStore();
@@ -34,9 +35,7 @@ export const Header = observer(() => {
       </div>
 
       <div className={style.right}>
-        <button className={style.launchBtn}>
-          <p>Launch App</p>
-        </button>
+        <Button className={style.launchBtn} title='Launch App' />
 
         <button
           className={style.burgerBtn}

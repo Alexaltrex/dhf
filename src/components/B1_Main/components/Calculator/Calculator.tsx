@@ -78,7 +78,7 @@ const Calculator = () => {
   const calculateEarn = () => {
     setEarn({
       tokens: String(100000 * (percentage / 100)).replace(
-        /\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g,
+        /(?=\B(?:\d{3})+(?!\d))/g,
         ','
       ),
       usd: String(((100000 * (percentage / 100)) / 198).toFixed(2)),
@@ -89,7 +89,7 @@ const Calculator = () => {
     handlePercent();
     handleInvested();
     calculateEarn();
-  }, [period, stakingValues, lockupValues, percentage]);
+  });
 
   return (
     <div className={style.calculator}>

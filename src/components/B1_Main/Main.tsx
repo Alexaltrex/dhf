@@ -76,7 +76,8 @@ const Main = () => {
             <Calculator />
           </div>
         </div>
-        <SocialLinks />
+
+        {!isMobile && <SocialLinks />}
       </div>
     </div>
   );

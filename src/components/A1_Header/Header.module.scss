@@ -97,11 +97,13 @@
     align-items: center;
 
     .launchBtn {
-      @include button_outlined;
-      padding: 10px 16px;
-
-      @include desktop {
-        padding: 10px 24px;
+      & > div {
+        & > div {
+          height: 42px;
+          @media (max-width: 1440px) {
+            height: 38px;
+          }
+        }
       }
     }
 

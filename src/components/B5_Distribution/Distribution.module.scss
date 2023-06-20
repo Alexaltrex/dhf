@@ -1,4 +1,4 @@
-@import "../../assets/style/app";
+@import '../../assets/style/app';
 
 .distribution {
   padding-top: 100px;
@@ -6,7 +6,6 @@
   @include desktop {
     padding-top: 200px;
   }
-
 
   .inner {
     @include inner;
@@ -17,18 +16,21 @@
       line-height: 110%;
       text-align: center;
       letter-spacing: -0.04em;
-      background: radial-gradient(39.08% 90.11% at -8.58% 31.25%, rgba(8, 6, 23, 0.72) 0%, rgba(17, 18, 31, 0) 100%), #FFFFFF;
+      background: radial-gradient(
+          39.08% 90.11% at -8.58% 31.25%,
+          rgba(8, 6, 23, 0.72) 0%,
+          rgba(17, 18, 31, 0) 100%
+        ),
+        #ffffff;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
       @include desktop {
         font-size: 60px;
       }
-
     }
 
     .content {
-
       @include desktop {
         margin-top: 27px;
         display: flex;
@@ -71,7 +73,11 @@
       .listCard {
         margin-top: 5px;
         padding: 30px 24px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0) 104.6%);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02) 0%,
+          rgba(255, 255, 255, 0) 104.6%
+        );
         border-radius: 20px;
         border: 1px solid rgba(213, 210, 230, 0.08);
 
@@ -88,7 +94,7 @@
           line-height: 100%;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: #D1D1DB;
+          color: #d1d1db;
 
           @include desktop {
             font-size: 16px;
@@ -110,6 +116,7 @@
             }
 
             .dot {
+              flex: 0 0 auto;
               position: relative;
               margin-top: 3px;
               width: 19px;
@@ -124,7 +131,7 @@
               &:after {
                 position: absolute;
                 display: block;
-                content: "";
+                content: '';
                 left: 0;
                 top: -3px;
                 width: 19px;
@@ -149,7 +156,7 @@
                 font-weight: 400;
                 font-size: 22px;
                 line-height: 100%;
-                color: #FFFFFF;
+                color: #ffffff;
 
                 @include desktop {
                   font-size: 24px;
@@ -161,7 +168,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 150%;
-                color: #D1D1DB;
+                color: #d1d1db;
 
                 @include desktop {
                   margin-top: 10px;
@@ -172,10 +179,10 @@
 
             &:nth-child(1) {
               .dot {
-                background: #1F00B7;
+                background: #1f00b7;
 
                 &:after {
-                  background: #2B00FF;
+                  background: #2b00ff;
                   box-shadow: 0px 6px 30px rgba(43, 0, 255, 0.7);
                 }
               }
@@ -183,10 +190,10 @@
 
             &:nth-child(2) {
               .dot {
-                background: #7002C6;
+                background: #7002c6;
 
                 &:after {
-                  background: #8F00FF;
+                  background: #8f00ff;
                   box-shadow: 0px 6px 30px rgba(143, 0, 255, 0.7);
                 }
               }
@@ -194,10 +201,10 @@
 
             &:nth-child(3) {
               .dot {
-                background: #BEBEBE;
+                background: #bebebe;
 
                 &:after {
-                  background: #FFFFFF;
+                  background: #ffffff;
                   box-shadow: 0px 6px 30px rgba(255, 255, 255, 0.4);
                 }
               }
@@ -208,22 +215,14 @@
                 background: #626271;
 
                 &:after {
-                  background: #9E9EB1;
+                  background: #9e9eb1;
                   box-shadow: 0px 6px 30px rgba(186, 186, 204, 0.3);
                 }
               }
             }
-
           }
-
-
-
         }
-
-
       }
-
-
     }
   }
 }
