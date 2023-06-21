@@ -19,14 +19,10 @@ export const Invest = () => {
     <div className={style.invest} id='Why us'>
       <div className={style.investInner}>
         <div className={style.videoWrapper}>
-          {!isDesktop && isSafari() ? (
-            <img src={src} alt='' />
-          ) : (
-            <video autoPlay={true} muted={true} playsInline={true} loop={true}>
-              <source src={videoMp4} type='video/mp4; codecs="hvc1"' />
-              <source src={videoWebm} type='video/webm' />
-            </video>
-          )}
+          <video autoPlay={true} muted={true} playsInline={true} loop={true}>
+            <source src={videoMp4} type='video/mp4; codecs="hvc1"' />
+            <source src={videoWebm} type='video/webm' />
+          </video>
         </div>
 
         <div className={style.second}>

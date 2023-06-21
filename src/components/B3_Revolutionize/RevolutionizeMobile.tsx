@@ -22,20 +22,20 @@ export const RevolutionizeMobile = ({ scopeRef }: any) => {
 
         <div className={style.content}>
           <div className={style.animationWrapper}>
-            {isSafari() ? (
+            <video
+              preload='auto'
+              autoPlay
+              muted={true}
+              playsInline={true}
+              loop={true}
+            >
+              <source src={videoWebm} />
+              <source src={videoMp4} />
+            </video>
+            {/* {isSafari() ? (
               <img src={src} alt='' />
             ) : (
-              <video
-                preload='auto'
-                autoPlay
-                muted={true}
-                playsInline={true}
-                loop={true}
-              >
-                <source src={videoWebm} />
-                <source src={videoMp4} />
-              </video>
-            )}
+            )} */}
           </div>
 
           <div className={style.cards}>
