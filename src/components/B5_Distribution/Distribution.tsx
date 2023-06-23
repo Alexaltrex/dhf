@@ -22,10 +22,19 @@ export const Distribution = () => {
 
         <div className={style.content}>
           <div className={style.animWrapper}>
-            <video autoPlay={true} muted={true} playsInline={true} loop={true}>
-              <source src={videoWebm} />
-              <source src={videoMp4} />
-            </video>
+            {!isDesktop ? (
+              <img src={src} alt='' />
+            ) : (
+              <video
+                autoPlay={true}
+                muted={true}
+                playsInline={true}
+                loop={true}
+              >
+                <source src={videoWebm} />
+                <source src={videoMp4} />
+              </video>
+            )}
           </div>
 
           <div className={style.listCard}>

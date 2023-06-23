@@ -9,12 +9,15 @@ import { isSafari } from '../../helpers/helpers';
 import videoWebm from '../../assets/webm/box.webm';
 // @ts-ignore
 import videoMp4 from '../../assets/mp4/box.mp4';
+import { useMediaQuery } from 'usehooks-ts';
 
 const title = 'Revolutionize Your Investing Experience with DHF';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const RevolutionizeMobile = ({ scopeRef }: any) => {
+  const isDesktop = useMediaQuery('(min-width: 1440px)');
+
   return (
     <div ref={scopeRef} className={`${style.revolutionize}`} id='Investing'>
       <div className={`${style.inner}`}>
@@ -22,20 +25,20 @@ export const RevolutionizeMobile = ({ scopeRef }: any) => {
 
         <div className={style.content}>
           <div className={style.animationWrapper}>
-            <video
-              preload='auto'
-              autoPlay
-              muted={true}
-              playsInline={true}
-              loop={true}
-            >
-              <source src={videoWebm} />
-              <source src={videoMp4} />
-            </video>
-            {/* {isSafari() ? (
+            {!isDesktop ? (
               <img src={src} alt='' />
             ) : (
-            )} */}
+              <video
+                preload='auto'
+                autoPlay
+                muted={true}
+                playsInline={true}
+                loop={true}
+              >
+                <source src={videoWebm} />
+                <source src={videoMp4} />
+              </video>
+            )}
           </div>
 
           <div className={style.cards}>
