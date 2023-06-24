@@ -79,6 +79,10 @@
           margin-right: 0;
         }
 
+        @media (max-width: 1440px) {
+          display: none;
+        }
+
         video {
           object-fit: cover;
           object-position: center;
