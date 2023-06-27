@@ -4,7 +4,6 @@ import { cards } from './cards';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import src from '../../assets/png/box.png';
-import { isSafari } from '../../helpers/helpers';
 // @ts-ignore
 import videoWebm from '../../assets/webm/box.webm';
 // @ts-ignore
