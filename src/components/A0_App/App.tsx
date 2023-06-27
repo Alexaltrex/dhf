@@ -20,7 +20,7 @@ import Staking from '../B2_Staking/Staking';
 
 export const App = observer(() => {
   const { setScrollDown, pageYOffset, setPageYOffset } = useStore();
-  const isDesktop = useMediaQuery('(min-width: 1440px)');
+  const isDesktop = useMediaQuery('(min-width: 991px)');
 
   useEffect(() => {
     const onScroll = (e: Event) => {

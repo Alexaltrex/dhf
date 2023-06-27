@@ -3,13 +3,11 @@
 .distribution {
   padding-top: 100px;
 
-  @include desktop {
+  @media (min-width: 767px) {
     padding-top: 200px;
   }
 
   .inner {
-    @include inner;
-
     .title {
       font-weight: 600;
       font-size: 40px;
@@ -25,13 +23,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
-      @include desktop {
+      @media (min-width: 767px) {
         font-size: 60px;
       }
     }
 
     .content {
-      @include desktop {
+      @media (min-width: 767px) {
         margin-top: 27px;
         display: flex;
         align-items: center;
@@ -49,7 +47,7 @@
           height: 324.8px;
         }
 
-        @include desktop {
+        @media (min-width: 767px) {
           width: 544px;
           height: 542px;
           margin-left: 0;
@@ -81,7 +79,7 @@
         border-radius: 20px;
         border: 1px solid rgba(213, 210, 230, 0.08);
 
-        @include desktop {
+        @media (min-width: 767px) {
           margin-top: 0;
           padding: 0;
           background: none;
@@ -96,7 +94,7 @@
           text-transform: uppercase;
           color: #d1d1db;
 
-          @include desktop {
+          @media (min-width: 767px) {
             font-size: 16px;
           }
         }
@@ -104,7 +102,7 @@
         .list {
           margin-top: 30px;
 
-          @include desktop {
+          @media (min-width: 767px) {
             margin-top: 40px;
           }
 
@@ -123,7 +121,7 @@
               height: 17px;
               border-radius: 6px;
 
-              @include desktop {
+              @media (min-width: 767px) {
                 width: 22px;
                 height: 20px;
               }
@@ -138,7 +136,7 @@
                 height: 17px;
                 border-radius: 6px;
 
-                @include desktop {
+                @media (min-width: 767px) {
                   width: 22px;
                   height: 20px;
                 }
@@ -148,7 +146,7 @@
             .texts {
               margin-left: 12px;
 
-              @include desktop {
+              @media (min-width: 767px) {
                 margin-left: 18px;
               }
 
@@ -158,7 +156,7 @@
                 line-height: 100%;
                 color: #ffffff;
 
-                @include desktop {
+                @media (min-width: 767px) {
                   font-size: 24px;
                 }
               }
@@ -170,7 +168,7 @@
                 line-height: 150%;
                 color: #d1d1db;
 
-                @include desktop {
+                @media (min-width: 767px) {
                   margin-top: 10px;
                   font-size: 15px;
                 }

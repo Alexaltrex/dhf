@@ -7,7 +7,7 @@
   transition: 0.3s;
   padding: 1px;
 
-  @media (max-width: 1440px) {
+  @media (max-width: 991px) {
     height: 100%;
   }
 
@@ -42,13 +42,13 @@
     background: linear-gradient(180deg, #0b0c18 0%, #070814 100%);
     border-radius: 20px;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 991px) {
       padding: 24px;
       display: block;
     }
   }
 
-  @include desktop {
+  @media (min-width: 991px) {
     &:hover {
       .wrapper {
         background: linear-gradient(180deg, #10111c 0%, #0d0e17 100%);
@@ -73,14 +73,18 @@
       height: 110px;
       border-radius: 16px;
 
-      @include desktop {
+      @media (min-width: 991px) {
         width: 120px;
         height: 120px;
       }
     }
 
     .socials {
-      @include onlyMobile(flex);
+      display: flex;
+
+      @media (min-width: 991px) {
+        display: none;
+      }
 
       .link {
         width: 24px;
@@ -109,7 +113,7 @@
     flex-direction: column;
     margin-top: 24px;
 
-    @include desktop {
+    @media (min-width: 991px) {
       margin-top: 0;
       margin-left: 30px;
     }
@@ -121,7 +125,7 @@
       line-height: 100%;
       color: #fff;
 
-      @include desktop {
+      @media (min-width: 991px) {
         font-size: 24px;
       }
     }
@@ -171,15 +175,19 @@
       line-height: 150%;
       color: #d1d1db;
 
-      @include desktop {
+      @media (min-width: 991px) {
         margin-top: 18px;
         font-size: 15px;
       }
     }
 
     .socials {
-      @include onlyDesktop(flex);
+      display: none;
       margin-top: 20px;
+
+      @media (min-width: 991px) {
+        display: flex;
+      }
 
       .link {
         width: 24px;

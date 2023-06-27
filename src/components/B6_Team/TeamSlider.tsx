@@ -37,7 +37,7 @@ export const TeamSlider = () => {
       </div>
 
       <div className={style.cardsDesktop}>
-        <div className={style.inner}>
+        <div className={`container ${style.inner}`}>
           {slides.map((slide, key) => (
             <Slide
               key={key}

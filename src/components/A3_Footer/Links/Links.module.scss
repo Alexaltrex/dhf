@@ -1,12 +1,11 @@
-@import "../../../assets/style/app";
+@import '../../../assets/style/app';
 
 .links {
-
   .label {
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    color: #89898F;
+    color: #89898f;
   }
 
   .nav {
@@ -15,7 +14,7 @@
     align-items: flex-start;
     margin-top: 20px;
 
-    @include desktop {
+    @media (min-width: 991px) {
       margin-top: 24px;
     }
 
@@ -25,33 +24,33 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 120%;
-      color: #D1D1DB;
+      color: #d1d1db;
 
       &:not(:first-child) {
         margin-top: 20px;
 
-        @include desktop {
+        @media (min-width: 991px) {
           margin-top: 20px;
         }
       }
 
       &:after {
-        @include desktop {
+        @media (min-width: 991px) {
           display: block;
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: -4px;
           height: 1px;
           width: 0;
-          background: #D1D1DB;
+          background: #d1d1db;
           transition: 0.3s;
         }
       }
 
       &:hover {
         &:after {
-          @include desktop {
+          @media (min-width: 991px) {
             width: 100%;
           }
         }

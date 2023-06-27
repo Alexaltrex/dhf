@@ -6,18 +6,17 @@ import { useAnimateNumber } from '../../hooks/useAnimateNumber';
 import videoWebm from '../../assets/webm/chart.webm';
 // @ts-ignore
 import videoMp4 from '../../assets/mp4/chart.mp4';
-import { isSafari } from '../../helpers/helpers';
 import src from '../../assets/png/chart.png';
 import { useMediaQuery } from 'usehooks-ts';
 
 export const Distribution = () => {
   const { ref, getValue } = useAnimateNumber(500);
 
-  const isDesktop = useMediaQuery('(min-width: 1440px)');
+  const isDesktop = useMediaQuery('(min-width: 767px)');
 
   return (
     <div className={style.distribution} id='Distribution'>
-      <div className={style.inner}>
+      <div className={`container ${style.inner}`}>
         <h2 className={style.title}>Distribution</h2>
 
         <div className={style.content}>

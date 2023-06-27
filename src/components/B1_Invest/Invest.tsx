@@ -5,7 +5,6 @@ import { useAnimateNumber } from '../../hooks/useAnimateNumber';
 import videoWebm from '../../assets/webm/safe.webm';
 // @ts-ignore
 import videoMp4 from '../../assets/mp4/safe.mp4';
-import { isSafari } from '../../helpers/helpers';
 import src from '../../assets/png/safe.png';
 import { useMediaQuery } from 'usehooks-ts';
 import Button from '../Button/Button';
@@ -13,11 +12,11 @@ import Button from '../Button/Button';
 export const Invest = () => {
   const { ref, getValue } = useAnimateNumber(500);
 
-  const isDesktop = useMediaQuery('(min-width: 1440px)');
+  const isDesktop = useMediaQuery('(min-width: 991px)');
 
   return (
     <div className={style.invest} id='Why us'>
-      <div className={style.investInner}>
+      <div className={`container ${style.investInner}`}>
         <div className={style.videoWrapper}>
           {!isDesktop ? (
             <img src={src} alt='' />

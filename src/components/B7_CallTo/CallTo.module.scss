@@ -3,7 +3,7 @@
 .callTo {
   padding: 90px 8px 60px;
 
-  @include desktop {
+  @media (min-width: 991px) {
     padding: 160px 0 60px;
   }
 
@@ -37,10 +37,7 @@
       border-radius: 39px;
     }
 
-    @include desktop {
-      width: 1180px;
-      margin-left: auto;
-      margin-right: auto;
+    @media (min-width: 991px) {
       border-radius: 30px;
       padding: 80px 0;
     }
@@ -60,7 +57,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
-      @include desktop {
+      @media (min-width: 991px) {
         font-size: 52px;
       }
     }
@@ -73,7 +70,7 @@
       text-align: center;
       color: #fff;
 
-      @include desktop {
+      @media (min-width: 991px) {
         font-size: 15px;
         // width: 380px;
         max-width: 660px;

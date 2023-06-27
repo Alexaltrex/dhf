@@ -10,3 +10,13 @@
 body {
   height: 100vh;
 }
+
+.container {
+  max-width: 1216px;
+  padding: 0 18px;
+  margin: 0 auto;
+}
+
+.scroller {
+  overflow-x: hidden;
+}

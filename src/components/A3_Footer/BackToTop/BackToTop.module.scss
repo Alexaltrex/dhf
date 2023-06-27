@@ -1,18 +1,22 @@
-@import "../../../assets/style/app";
+@import '../../../assets/style/app';
 
 .backToTop {
   margin-top: 47px;
 
-  @include desktop {
+  @media (min-width: 991px) {
     margin-top: 0;
   }
 
   .label {
-    @include onlyMobile;
+    display: block;
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    color: #89898F;
+    color: #89898f;
+
+    @media (min-width: 991px) {
+      display: none;
+    }
   }
 
   .btn {
@@ -27,17 +31,16 @@
     border: 1px solid rgba(213, 210, 230, 0.08);
     transition: 0.3s;
 
-    @include desktop {
+    @media (min-width: 991px) {
       margin-top: 0;
       width: 46px;
       height: 46px;
     }
 
     &:hover {
-      @include desktop {
-        background: #1B1D26;
+      @media (min-width: 991px) {
+        background: #1b1d26;
       }
     }
-
   }
 }

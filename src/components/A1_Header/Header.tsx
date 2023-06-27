@@ -1,6 +1,5 @@
 import * as React from 'react';
 import style from './Header.module.scss';
-import logo from '../../assets/png/A1_Header/logo.png';
 import logoSvg from '../../assets/png/A1_Header/logo.svg';
 import { observer } from 'mobx-react-lite';
 import { useStore } from '../../store/useStore';

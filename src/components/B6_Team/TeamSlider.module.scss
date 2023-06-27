@@ -3,7 +3,7 @@
 .teamSlider {
   padding-top: 124px;
 
-  @include desktop {
+  @media (min-width: 991px) {
     padding-top: 110px;
   }
 
@@ -26,14 +26,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @include desktop {
+    @media (min-width: 991px) {
       font-size: 60px;
     }
   }
 
   .swiperMobile {
-    @include onlyMobile;
+    display: block;
     margin-top: 30px;
+
+    @media (min-width: 991px) {
+      display: none;
+    }
 
     .swiperSlide {
       width: 275px;
@@ -42,12 +46,14 @@
   }
 
   .cardsDesktop {
-    @include onlyDesktop;
-
+    display: none;
     margin-top: 50px;
 
+    @media (min-width: 991px) {
+      display: block;
+    }
+
     .inner {
-      @include inner;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);

@@ -1,13 +1,14 @@
-@import "../../assets/style/app";
+@import '../../assets/style/app';
 
 .footer {
   padding-bottom: 28px;
 
   .inner {
-    @include inner;
-
     .footerMobile {
-      @include onlyMobile;
+      display: block;
+      @media (min-width: 991px) {
+        display: none;
+      }
 
       .middle {
         margin-top: 36px;
@@ -15,14 +16,16 @@
         grid-template-columns: repeat(2, 1fr);
 
         .right {
-
         }
       }
-
     }
 
     .footerDesktop {
-      @include onlyDesktop;
+      display: none;
+
+      @media (min-width: 991px) {
+        display: block;
+      }
 
       .top {
         display: grid;
@@ -40,13 +43,8 @@
             display: flex;
             justify-content: space-between;
           }
-
         }
       }
-
-
-
-
     }
 
     .rights {
@@ -54,9 +52,9 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
-      color: #D1D1DB;
+      color: #d1d1db;
 
-      @include desktop {
+      @media (min-width: 991px) {
         margin-top: 30px;
       }
     }

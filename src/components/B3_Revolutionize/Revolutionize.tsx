@@ -100,7 +100,7 @@ export const Revolutionize = ({ scopeRef }: any) => {
 
   return (
     <div ref={scopeRef} className={`${style.revolutionize}`} id='Investing'>
-      <div className={`${style.inner}`}>
+      <div className={`container ${style.inner}`}>
         <h2 className={style.title}>{title}</h2>
 
         <div ref={contentRef} className={style.content}>

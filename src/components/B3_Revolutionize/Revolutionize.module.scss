@@ -4,7 +4,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @include desktop {
+  @media (min-width: 991px) {
     padding-top: 210px;
     padding-bottom: 0;
     background: linear-gradient(
@@ -17,8 +17,6 @@
   }
 
   .inner {
-    @include inner;
-
     .title {
       font-weight: 600;
       font-size: 40px;
@@ -35,7 +33,7 @@
       background-clip: text;
       text-fill-color: transparent;
 
-      @include desktop {
+      @media (min-width: 991px) {
         font-size: 60px;
         width: 753px;
         text-align: center;
@@ -47,7 +45,7 @@
     .content {
       position: relative;
 
-      @include desktop {
+      @media (min-width: 991px) {
         padding-top: 80px;
         display: flex;
         flex-direction: row-reverse;
@@ -69,7 +67,7 @@
           height: 345px;
         }
 
-        @include desktop {
+        @media (min-width: 991px) {
           margin-top: -55px;
           margin-left: 44px;
           width: 612px;
@@ -79,7 +77,13 @@
           margin-right: 0;
         }
 
-        @media (max-width: 1440px) {
+        @media (max-width: 1100px) {
+          width: 450px;
+          height: 515px;
+          margin-left: 0;
+          transform: translate(40px, 0);
+        }
+        @media (max-width: 990px) {
           display: none;
         }
 
@@ -108,7 +112,7 @@
       .cards {
         margin-top: 40px;
 
-        @include desktop {
+        @media (min-width: 991px) {
           position: absolute;
           left: 0;
           margin-top: 0;
@@ -159,7 +163,7 @@
             }
           }
 
-          @include desktop {
+          @media (min-width: 991px) {
             padding: 32px;
           }
 
@@ -173,7 +177,7 @@
             line-height: 100%;
             color: #ffffff;
 
-            @include desktop {
+            @media (min-width: 991px) {
               font-size: 24px;
             }
           }
@@ -185,7 +189,7 @@
             line-height: 150%;
             color: #d1d1db;
 
-            @include desktop {
+            @media (min-width: 991px) {
               font-size: 15px;
             }
           }

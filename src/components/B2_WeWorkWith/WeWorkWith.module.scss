@@ -3,13 +3,11 @@
 .weWorkWith {
   // margin-top: 100px;
 
-  @include desktop {
+  @media (min-width: 991px) {
     margin-top: 160px;
   }
 
   .inner {
-    @include inner;
-
     .title {
       text-align: center;
       font-weight: 800;
@@ -19,7 +17,7 @@
       text-transform: uppercase;
       color: #d1d1db;
 
-      @include desktop {
+      @media (min-width: 991px) {
         font-size: 16px;
       }
     }
@@ -36,15 +34,19 @@
       margin-top: 24px;
       padding: 17px 0;
 
-      @include desktop {
+      @media (min-width: 991px) {
         margin-top: 40px;
         padding: 42px 0;
         border-radius: 20px;
       }
 
       .rowMobile1 {
-        @include onlyMobile(grid);
+        display: none;
         grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: 990px) {
+          display: grid;
+        }
 
         .cell {
           @include centerRow;
@@ -93,9 +95,13 @@
       }
 
       .rowMobile2 {
-        @include onlyMobile(grid);
+        display: none;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 16px;
+
+        @media (max-width: 990px) {
+          display: grid;
+        }
 
         .cell {
           position: relative;
@@ -136,8 +142,12 @@
       }
 
       .rowDesktop {
-        @include onlyDesktop(grid);
+        display: none;
         grid-template-columns: repeat(5, 1fr);
+
+        @media (min-width: 991px) {
+          display: grid;
+        }
 
         .cell {
           @include centerRow;

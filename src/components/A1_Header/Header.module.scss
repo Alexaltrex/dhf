@@ -13,7 +13,7 @@
   background: rgba(7, 9, 19, 0);
   transition: 0.3s;
 
-  @include desktop {
+  @media (min-width: 991px) {
     padding: 34px 60px;
   }
 
@@ -22,7 +22,7 @@
     padding-bottom: 16px;
     background: rgba(7, 9, 19, 1);
 
-    @include desktop {
+    @media (min-width: 991px) {
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -62,7 +62,7 @@
   }
 
   .links {
-    @include onlyDesktop;
+    display: none;
     position: absolute;
     left: 50%;
     //top: 34px;
@@ -72,6 +72,10 @@
     padding: 10px 24px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
+
+    @media (min-width: 991px) {
+      display: block;
+    }
 
     .link {
       text-decoration: none;
@@ -108,7 +112,7 @@
     }
 
     .burgerBtn {
-      @include onlyMobile;
+      display: block;
       @include centerRow;
       @include button;
       margin-left: 8px;
@@ -116,6 +120,10 @@
       height: 40px;
       border-radius: 50%;
       background: #fff;
+
+      @media (min-width: 991px) {
+        display: none;
+      }
     }
   }
 }
